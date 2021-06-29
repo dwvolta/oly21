@@ -1,0 +1,608 @@
+/* #########################################################################################
+*  # RESETS
+*  ######################################################################################### */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* #########################################################################################
+*  # VARIABLES
+*  ######################################################################################### */
+:root {
+	--dw_dpa_grey-01: #f1f3f5;
+    --dw_dpa_grey-1: #3b444d;
+    --dw_dpa_grey-2: #e4e8eb;
+    --dw_dpa_grey-3: #7f8891;
+    --dw_dpa_grey-4: #3c444d;
+    --dw_dpa_grey-5: #323c45;
+    --dw_dpa_grey-6: #6d7780;
+    --dw_dpa_grey-7: #f1f3f5;
+    --dw_dpa_grey-14: #323c45;
+    --dw_dpa_grey-13: #3b444d;
+    --dw_dpa_grey-12: #4b545c;
+    --dw_dpa_blue-1: #002d5a;
+
+}
+
+/* #########################################################################################
+*  # WEBFONTS
+*  ######################################################################################### */
+/* ---------------- Noto Sans ---------------- */
+/*Basic Latin Symbols*/
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinBasicSymbols/NotoSansLatinBasicSymbols-Regular.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinBasicSymbols/NotoSansLatinBasicSymbols-Regular.woff") format("woff");
+    unicode-range: U+020-040, U+05B-060, U+07B-07F;
+    /*Basic Latin Symbols*/
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinBasicSymbols/NotoSansLatinBasicSymbols-Bold.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinBasicSymbols/NotoSansLatinBasicSymbols-Bold.woff") format("woff");
+    unicode-range: U+020-040, U+05B-060, U+07B-07F;
+    /*Basic Latin Symbols*/
+}
+
+/*Basic Latin Letters*/
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinBasicLetters/NotoSansLatinBasicLetters-Regular.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinBasicLetters/NotoSansLatinBasicLetters-Regular.woff") format("woff");
+    unicode-range: U+041-05A, U+061-07A;
+    /*Basic Latin Letters*/
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinBasicLetters/NotoSansLatinBasicLetters-Bold.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinBasicLetters/NotoSansLatinBasicLetters-Bold.woff") format("woff");
+    unicode-range: U+041-05A, U+061-07A;
+    /*Basic Latin Letters*/
+}
+
+/*Latin Extended*/
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinExtended/NotoSansLatinExtended-Regular.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinExtended/NotoSansLatinExtended-Regular.woff") format("woff");
+    unicode-range: U+0A0-24F;
+    /*Latin Extended*/
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Noto Sans"), url("https://commons.dw.com/dpa/assets/webfonts/NotoSansLatinExtended/NotoSansLatinExtended-Bold.woff2") format("woff2"), url("../assets/webfonts/NotoSansLatinExtended/NotoSansLatinExtended-Bold.woff") format("woff");
+    unicode-range: U+0A0-24F;
+    /*Latin Extended*/
+}
+
+
+.dpa_app {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    ;
+}
+
+/* #########################################################################################
+*  # WIDGET
+*  ######################################################################################### */
+.dpa_app {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* #########################################################################################
+*  # HEADER
+*  ######################################################################################### */
+.dpa_app .fontColorHighlight, .dpa_medals-subtitle-icon  {
+    color: var(--dw_dpa_blue-1) !important;
+    fill: var(--dw_dpa_blue-1) !important;
+}
+
+.dpa_app .backgroundColorHighlight {
+    color: #3e3e3e;
+    fill: #3e3e3e;
+    background-color: var(--dw_dpa_grey-7);
+}
+
+.dpa_appSA .dpa_header {
+    /*height: 35px;*/
+}
+
+.dpa_appSA .dpa_header .dpa_header-logo {
+    text-align: start;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 35px;
+    margin-top: 0px !important;
+    width: auto;
+    /*transform: translate(-3px, 0px);*/
+}
+
+.dpa_appSA .dpa_header .dpa_header-logo g {
+    fill: #002063;
+}
+
+.dpa_appSA .dpa_header .dpa_header-title {
+    padding-left: 50px;
+    text-align: start;
+    text-transform: none;
+}
+
+.dpa_appSA .dpa_header .dpa_header-update {
+    background-color: var(--dw_dpa_grey-7);
+    width: 35px;
+    height: 35px;
+}
+
+.dpa_appSA .dpa_header .dpa_header-update .dpa_header-update-icon {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+/**
+ * Header/font-styles/common
+ */
+.dpa_appSA .dpa_header .dpa_header-title {
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: var(--dw_dpa_grey-13);
+}
+
+/**
+ * Header/font-styles/mobile
+ */
+.dpa_appSA.dpa_app-mobile_true .dpa_header .dpa_header-title {
+    font-size: 16px;
+}
+
+/**
+ * Header/font-styles/desktop
+ */
+.dpa_appSA.dpa_app-mobile_false .dpa_header .dpa_header-title {
+    font-size: 12px;
+    text-transform: uppercase !important;
+}
+
+/* header logo modifications */
+/*=>competition: em-men (fb_mls)*/
+/*show/hide logo*/
+.dpa_appSA.dpa_app-fb_mls .dpa_header .dpa_header-logo img {
+    display: none;
+}
+
+/*logo substitution as background-image*/
+.dpa_appSA.dpa_app-fb_mls .dpa_header .dpa_header-logo {
+    background-image: url("https://d35y7ofb9zmrr6.cloudfront.net/fb_mls/assets/img/competitions/fb_mem.svg?v=9");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px 30px;
+}
+
+/* #########################################################################################
+*  # HEADLINE
+*  ######################################################################################### */
+.dpa_appSAScoreboard .dpa_title {
+    background: #f1f3f5;
+    border: none;
+}
+
+.dpa_header-update-icon{
+ background-image: url("fct-reload.svg");
+  background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dpa_header-update-icon svg{
+ transform: none;
+ visibility: hidden;
+}
+/* #########################################################################################
+*  # CONTENT
+*  ######################################################################################### */
+/**
+ * common
+ */
+.dpa_app .dpa_box {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0 0 10px;
+    background-color: var(--dw_dpa_grey-7);
+}
+
+.dpa_medals .dpa_medals-menu {
+    font-weight: bold;
+    color: var(--dw_dpa_blue-1);
+    margin: 0 5px 1px 0;
+}
+
+.dpa_medals .dpa_medals-menu .dpa_button {
+    padding: 10px 0px !important;
+}
+
+
+.paddingRight20:active {
+   text-decoration: underline !important;
+}
+
+.paddingRight20:hover{
+   text-decoration: underline;
+}
+
+.dpa_medals .dpa_medals-menu .dpa_button.active {
+    text-decoration: underline;
+}
+
+
+.paddingRight20:focus {
+   text-decoration: underline;
+   border: 1px solid green;
+}
+
+.width33.active {
+	background-image: none !important;
+}
+
+.width33:first-child {
+    font-size: 0 !important;
+    width: 5% !important;
+    background-image: url("fct_previous.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.dpa_icon-arrow{
+	right: 4px !important;
+}
+
+.width33:nth-child(2) {
+    width: 47.5% !important;
+    font-size: 14px !important;
+}
+
+.width33:nth-child(3) {
+    width: 47.5% !important;
+    font-size: 14px !important;
+}
+
+
+.dpa_medalsTable .dpa_country .dpa_td {
+    border-bottom-width: 2.5px !important;
+}
+
+.dpa_app .dpa_box-header-wrap .dpa_box-header .dpa_box-title {
+    font-size: 0px !important;
+}
+
+.dpa_app .dpa_box-header-wrap .dpa_box-header{
+    height: 20px;
+}
+
+.dpa_medals .dpa_medalsTable .dpa_box-header-wrap .dpa_box-header .dpa_box-header-rank,
+.dpa_medals .dpa_medalsTable .dpa_box-header-wrap .dpa_box-header .dpa_box-header-flag,
+.dpa_medals .dpa_medalsTable .dpa_box-header-wrap .dpa_box-header .dpa_box-header-name {
+    height: 0px !important;
+    visibility: hidden !important;
+}
+
+.dpa_icon-medal {
+    border-radius: 0% !important;
+    width: 29px !important;
+    height: 10px;
+}
+
+.dpa_medals .dpa_medalsTable .dpa_box-header-wrap .dpa_box-header .dpa_icon-medal {
+    margin-top: 25px;
+}
+
+
+
+.dpa_content-menu-flyout .dpa_hovered {
+    border: 4px solid red;
+}
+
+
+.dpa_icon-medal.gold {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #ebe7b9, #c9b037);
+}
+
+.dpa_icon-medal.silver {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #e3e3e3, #595959);
+}
+
+.dpa_icon-medal.bronze {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #ffd7c2, #a36c40);
+}
+
+
+.dpa_medalsTable .dpa_box-header .dpa_icon-medals {
+    visibility: hidden;
+}
+
+.floatRight .dpa_box-header-amount, .dpa_box-country-amount, .dpa_td.dpa_country-amount, .dpa_box-header-amount {
+	width: 0px !important; 
+	visibility: hidden;
+}
+
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-gold, .dpa_box-header .dpa_box-header-gold,
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-silver, .dpa_box-header .dpa_box-header-silver,
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-bronze, .dpa_box-header .dpa_box-header-bronze,
+.dpa_medalsTable .dpa_box-header .dpa_box-header-gold, .dpa_medalsTable .dpa_box-header .dpa_box-header-silver, .dpa_medalsTable .dpa_box-header .dpa_box-header-bronze, .dpa_medalsTable .dpa_box-header .dpa_box-header-amount
+{
+    width: 35px;
+    font-weight: bold;
+}
+
+.dpa_medals .dpa_content-menu-flyout .dpa_content-menu-flyout-content{
+    max-height: 352px !important;
+    padding-bottom: 0px !important;
+}
+
+
+
+.dpa_appSAMedals .dpa_medals .dpa_table {
+    margin-left: 0px !important;
+}
+
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medalsTable .dpa_country.dpa_mobileButton {
+    background-color: white !important;
+}
+
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medalsTable .dpa_country.dpa_mobileButton:hover {
+    background-color: white !important;
+}
+
+.dpa_medals .dpa_medalsTable .dpa_country .dpa_td.dpa_country-rank {
+    padding: 7px !important;
+    width: 20px;
+    font-weight: bold !important;
+    font-size: 16px;
+    color: var(--dw_dpa_grey-12);
+    text-align: right !important;
+}
+
+
+.dpa_medalsTable .dpa_country {
+    font-size: 16px;
+    /*font-weight: bold !important;*/
+    color: var(--dw_dpa_grey-14);
+    line-height: 1 !important;
+}
+
+.dpa_medals .dpa_medals-subtitle .dpa_medals-subtitle-medals{
+	margin-top: 10PX !important;
+}
+.dpa_app .highlight {
+    background-color: transparent !important;
+    font-weight: normal;
+}
+
+.dpa_content-menu-flyout {
+    margin: 0px !important;
+}
+
+.dpa_content-menu-flyout-btn {
+    text-align: left !important;
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.dpa_app .dpa_box-header-wrap {
+	padding: 0 12px !important;
+}
+.dpa_app .dpa_scroll .dpa_scroll-trail, .dpa_app .dpa_scroll .dpa_scroll-bar{
+	width: 4px !important;
+}
+.dpa_scroll .dpa_scroll-mobile ._scrollbar {
+    top: -10px;
+}
+
+.dpa_app .dpa_scroll._scrollbar .dpa_scroll-content{
+	padding: 0px !important;
+}
+.dpa_content-menu-flyout .dpa_scroll._scrollbar .dpa_content-menu-flyout-btn {
+    margin: 1px !important;
+    padding: 11px 13px;
+    border: solid 2px white;
+}
+
+.dpa_scroll-content {
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--dw_dpa_grey-12);
+}
+
+.dpa_bodyOver-background-flyout{
+	background-color: rgba(241, 243, 245, 0.5)!important;
+}
+
+.dpa_content-menu-flyout{
+	border-top: 1px solid #e4e8eb;
+}
+
+.dpa_content-menu-flyout .dpa_content-menu-flyout-btn:hover,
+.dpa_content-menu-flyout .dpa_content-menu-flyout-btn-hover {
+    background-color: white;
+    border: solid 2px var(--dw_dpa_blue-1);
+    padding: 11px 13px;
+
+}
+
+
+
+.dpa_medals .dpa_content-menu-flyout{
+    border: solid 1px #6f7981 !important;
+}
+
+
+.dpa_content-menu-flyout-btn.active {
+    background-color: var(--dw_dpa_grey-14) !important;
+    color: white;
+    font-weight: normal !important;
+    border: none;
+}
+
+.dpa_content-menu-flyout-btn:focus {
+    background-color: var(--dw_dpa_grey-14);
+}
+
+.dpa_medals .dpa_medals-subtitle .dpa_medals-subtitle-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dw_dpa_grey-13);
+}
+
+.dpa_medals .dpa_medals-subtitle {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-flag {
+    width: 28px !important;
+}
+
+/**
+ * Table/font-styles/common
+ */
+.dpa_app.dpa_appSATable .dpa_content-menu .dpa_content-menu-btn {
+    color: var(--dw_dpa_grey-5);
+    text-transform: none;
+}
+
+.dpa_app.dpa_appSATable .dpa_content-menu .dpa_content-menu-btn .active {
+    font-weight: bold;
+    color: var(--dw_dpa_blue-1);
+}
+
+.dpa_appSATable .dpa_table .dpa_tableRow {
+    font-weight: normal;
+    color: var(--dw_dpa_grey-6);
+}
+
+.dpa_appSATable .dpa_table .dpa_tableRow .dpa_tableRank,
+.dpa_appSATable .dpa_table .dpa_tableRow .dpa_tableName,
+.dpa_appSATable .dpa_table .dpa_tableRow .dpa_tablePoints {
+    font-weight: bold;
+    color: var(--dw_dpa_grey-1);
+}
+
+.dpa_appSATable .dpa_table .dpa_tableRow.dpa_tableHead,
+.dpa_appSATable .dpa_table .dpa_tableRow.dpa_tableHead .dpa_tableRank,
+.dpa_appSATable .dpa_table .dpa_tableRow.dpa_tableHead .dpa_tableName,
+.dpa_appSATable .dpa_table .dpa_tableRow.dpa_tableHead .dpa_tablePoints {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dpa_app-mobile_true.dpa_appSATable .dpa_tableLegend-item-text {
+    color: var(--dw_dpa_grey-3);
+}
+
+/**
+ * Table/font-styles/mobile
+ */
+.dpa_app.dpa_app-mobile_true.dpa_appSATable .dpa_content-menu .dpa_content-menu-btn {
+    font-size: 16px;
+}
+
+.dpa_app-mobile_true.dpa_appSATable .dpa_table .dpa_tableRow {
+    font-size: 12px;
+}
+
+/**
+ * Table/font-styles/desktop
+ */
+.dpa_app.dpa_app-mobile_false.dpa_appSATable .dpa_content-menu .dpa_content-menu-btn {
+    font-size: 18px;
+}
+
+.dpa_app-mobile_false.dpa_appSATable .dpa_table .dpa_tableRow {
+    font-size: 15px;
+}
+
+.dpa_app-mobile_false.dpa_appSATable .dpa_table .dpa_tableRow .dpa_tableGoalsDiff {
+    font-size: 13px;
+}
+
+/**
+ * Table/trendicons
+ * used to show if team rise or fall
+ */
+.dpa_appSATable .dpa_tables .dpa_trendIcon0 {
+    background: url('https://commons.dw.com/dpa/assets/gfx/hoch.svg') no-repeat center center;
+    height: 7px;
+    width: 14px;
+    border: none transparent;
+}
+
+.dpa_appSATable .dpa_tables .dpa_trendIcon2 {
+    background: url('https://commons.dw.com/dpa/assets/gfx/runter.svg') no-repeat center center;
+    height: 7px;
+    width: 14px;
+    border: none transparent;
+}
+
+/**
+ * Table/rank-classification
+ */
+.dpa_appSATable .dpa_tableCell.dpa_tableRank {
+    position: relative;
+}
+
+.dpa_appSATable .dpa_tableCell.dpa_tableRank .dpa_tableRank-padding {
+    background-color: transparent;
+    color: #3b444d;
+}
+
+.dpa_appSATable .dpa_tableRank-padding::before {
+    content: '';
+    width: 8px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+/* CONTROLS */
+.dpa_app .bx-pager {
+    border-top: none;
+}
+
+.dpa_appSAScoreboard .bx-wrapper .bx-pager.bx-default-pager a,
+.dpa_appSAScoreboard .bx-wrapper .bx-pager.bx-default-pager .bx-pager-link {
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+}
+
+.dpa_appSAScoreboard .bx-wrapper .bx-pager.bx-default-pager a.active,
+.dpa_appSAScoreboard .bx-wrapper .bx-pager.bx-default-pager .bx-pager-link.active {
+    width: 7px;
+    height: 7px;
+}
+
+/* FOOTER */
+.dpa_footer {
+    display: none;
+}
