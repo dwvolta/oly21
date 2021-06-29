@@ -11,9 +11,8 @@ body {
 *  # VARIABLES
 *  ######################################################################################### */
 :root {
-	--dw_dpa_grey-01: #f1f3f5;
     --dw_dpa_grey-1: #3b444d;
-    --dw_dpa_grey-2: #e4e8eb;
+    --dw_dpa_grey-2: #323c4d;
     --dw_dpa_grey-3: #7f8891;
     --dw_dpa_grey-4: #3c444d;
     --dw_dpa_grey-5: #323c45;
@@ -203,16 +202,8 @@ body {
     border: none;
 }
 
-.dpa_header-update-icon{
- background-image: url("fct-reload.svg");
-  background-repeat: no-repeat;
-    background-position: center center;
-}
 
-.dpa_header-update-icon svg{
- transform: none;
- visibility: hidden;
-}
+
 /* #########################################################################################
 *  # CONTENT
 *  ######################################################################################### */
@@ -236,8 +227,6 @@ body {
 .dpa_medals .dpa_medals-menu .dpa_button {
     padding: 10px 0px !important;
 }
-
-
 .paddingRight20:active {
    text-decoration: underline !important;
 }
@@ -249,43 +238,70 @@ body {
 .dpa_medals .dpa_medals-menu .dpa_button.active {
     text-decoration: underline;
 }
-
-
 .paddingRight20:focus {
    text-decoration: underline;
    border: 1px solid green;
 }
 
-.width33.active {
-	background-image: none !important;
+.dpa_results .dpa_icon{
+    visibility: hidden !important;
 }
+
+
+.width33{
+    font-size: 14px !important;
+}
+
+
 
 .width33:first-child {
-    font-size: 0 !important;
-    width: 5% !important;
-    background-image: url("fct_previous.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-
-.dpa_icon-arrow{
-	right: 4px !important;
+    width: 100% !important;
 }
 
 .width33:nth-child(2) {
-    width: 47.5% !important;
-    font-size: 14px !important;
+    width: 50% !important;
+   
+}
+
+.width33:nth-child(2):after {
+/*background-image: url('fct_close.svg');
+background-size: 20px 20px;
+background-repeat: no-repeat;
+background-position: center center;
+display: inline-block;
+width: 20px;
+height: 20px;
+content: "";*/
 }
 
 .width33:nth-child(3) {
-    width: 47.5% !important;
-    font-size: 14px !important;
+    width: 50% !important;
+}
+
+.width33:nth-child(3):after {
+/*background-image: url('fct_close.svg');
+background-size: 20px 20px;
+background-repeat: no-repeat;
+background-position: center center;
+display: inline-block;
+width: 20px;
+height: 20px;
+content: "";*/
+}
+
+/*dpa_button width33 floatLeft dpa_mobileButton dpa_results-button dpa_results-menu-button*/
+
+.dpa_scroll .dpa_scroll-mobile .dpa_content-menu-flyout-content .dpa_slideDown{
+ 
 }
 
 
+.dpa_app .paddingRight20{
+    padding-right: 5px !important;
+    top: -5px;
+}
 .dpa_medalsTable .dpa_country .dpa_td {
-    border-bottom-width: 2.5px !important;
+    border-bottom-width: 5px !important;
 }
 
 .dpa_app .dpa_box-header-wrap .dpa_box-header .dpa_box-title {
@@ -305,7 +321,7 @@ body {
 
 .dpa_icon-medal {
     border-radius: 0% !important;
-    width: 29px !important;
+    width: 30px;
     height: 10px;
 }
 
@@ -313,10 +329,8 @@ body {
     margin-top: 25px;
 }
 
-
-
-.dpa_content-menu-flyout .dpa_hovered {
-    border: 4px solid red;
+.dpa_medals .dpa_medalsTable .dpa_box-header-wrap .dpa_box-header {
+    right: 15px;
 }
 
 
@@ -335,34 +349,38 @@ body {
     background-image: linear-gradient(to bottom, #ffd7c2, #a36c40);
 }
 
-
 .dpa_medalsTable .dpa_box-header .dpa_icon-medals {
     visibility: hidden;
 }
 
-.floatRight .dpa_box-header-amount, .dpa_box-country-amount, .dpa_td.dpa_country-amount, .dpa_box-header-amount {
-	width: 0px !important; 
-	visibility: hidden;
-}
-
-.dpa_medalsTable .dpa_country .dpa_td.dpa_country-gold, .dpa_box-header .dpa_box-header-gold,
-.dpa_medalsTable .dpa_country .dpa_td.dpa_country-silver, .dpa_box-header .dpa_box-header-silver,
-.dpa_medalsTable .dpa_country .dpa_td.dpa_country-bronze, .dpa_box-header .dpa_box-header-bronze,
-.dpa_medalsTable .dpa_box-header .dpa_box-header-gold, .dpa_medalsTable .dpa_box-header .dpa_box-header-silver, .dpa_medalsTable .dpa_box-header .dpa_box-header-bronze, .dpa_medalsTable .dpa_box-header .dpa_box-header-amount
-{
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-gold,
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-silver,
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-bronze,
+.dpa_medalsTable .dpa_country .dpa_td.dpa_country-amount {
     width: 35px;
-    font-weight: bold;
 }
 
+.dpa_medalsTable .dpa_box-header .dpa_box-header-gold,
+.dpa_medalsTable .dpa_box-header .dpa_box-header-silver,
+.dpa_medalsTable .dpa_box-header .dpa_box-header-bronze,
+.dpa_medalsTable .dpa_box-header .dpa_box-header-amount {
+    width: 35px !important;
+}
+
+.dpa_scroll .dpa_scroll-mobile ._scrollbar {
+    top: -10px;
+}
 .dpa_medals .dpa_content-menu-flyout .dpa_content-menu-flyout-content{
     max-height: 352px !important;
-    padding-bottom: 0px !important;
 }
 
-
+.dpa_medals .dpa_scroll{
+    /*height: 100% !important;*/
+}
 
 .dpa_appSAMedals .dpa_medals .dpa_table {
     margin-left: 0px !important;
+    /*margin-top: 17px !important;*/
 }
 
 .dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medalsTable .dpa_country.dpa_mobileButton {
@@ -385,18 +403,28 @@ body {
 
 .dpa_medalsTable .dpa_country {
     font-size: 16px;
-    /*font-weight: bold !important;*/
     color: var(--dw_dpa_grey-14);
     line-height: 1 !important;
 }
 
-.dpa_medals .dpa_medals-subtitle .dpa_medals-subtitle-medals{
-	margin-top: 10PX !important;
-}
+
 .dpa_app .highlight {
     background-color: transparent !important;
     font-weight: normal;
 }
+
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button:hover .dpa_icon-arrow,
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button.dpa_hovered .dpa_icon-arrow,
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button.open .dpa_icon-arrow {
+/*    transform: none;
+    visibility: hidden;*/
+}
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button .dpa_icon-arrow,
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button.dpa_hovered .dpa_icon-arrow,
+.dpa_app.dpa_app-mobile_false .dpa_medals .dpa_medals-menu-button.open .dpa_icon-arrow {
+/*    transform: none;
+    visibility: hidden;*/
+    }
 
 .dpa_content-menu-flyout {
     margin: 0px !important;
@@ -404,26 +432,11 @@ body {
 
 .dpa_content-menu-flyout-btn {
     text-align: left !important;
-    border-bottom: 1px solid #e4e8eb;
 }
 
-.dpa_app .dpa_box-header-wrap {
-	padding: 0 12px !important;
-}
-.dpa_app .dpa_scroll .dpa_scroll-trail, .dpa_app .dpa_scroll .dpa_scroll-bar{
-	width: 4px !important;
-}
-.dpa_scroll .dpa_scroll-mobile ._scrollbar {
-    top: -10px;
-}
-
-.dpa_app .dpa_scroll._scrollbar .dpa_scroll-content{
-	padding: 0px !important;
-}
 .dpa_content-menu-flyout .dpa_scroll._scrollbar .dpa_content-menu-flyout-btn {
-    margin: 1px !important;
-    padding: 11px 13px;
-    border: solid 2px white;
+      margin: 0px !important;
+    padding: 13px 15px;
 }
 
 .dpa_scroll-content {
@@ -432,22 +445,16 @@ body {
     color: var(--dw_dpa_grey-12);
 }
 
-.dpa_bodyOver-background-flyout{
-	background-color: rgba(241, 243, 245, 0.5)!important;
+.dpa_app .borderColor{
+    color: var(--dw_dpq_grey-2) !impportant;
+    transform: translateX(15px);
 }
 
-.dpa_content-menu-flyout{
-	border-top: 1px solid #e4e8eb;
-}
-
-.dpa_content-menu-flyout .dpa_content-menu-flyout-btn:hover,
+.dpa_app-mobile_false .dpa_content-menu-flyout .dpa_content-menu-flyout-btn:hover,
 .dpa_content-menu-flyout .dpa_content-menu-flyout-btn-hover {
     background-color: white;
     border: solid 2px var(--dw_dpa_blue-1);
-    padding: 11px 13px;
-
 }
-
 
 
 .dpa_medals .dpa_content-menu-flyout{
@@ -462,8 +469,9 @@ body {
     border: none;
 }
 
+
 .dpa_content-menu-flyout-btn:focus {
-    background-color: var(--dw_dpa_grey-14);
+    background-color: green;
 }
 
 .dpa_medals .dpa_medals-subtitle .dpa_medals-subtitle-text {
@@ -518,6 +526,9 @@ body {
     color: var(--dw_dpa_grey-3);
 }
 
+.dpa_medalsSport .dpa_medalsSport-sport .dpa_medalsSport-sport-name .dpa_medalsSport-sport-name-text{
+    text-transform: none !important;
+}
 /**
  * Table/font-styles/mobile
  */
